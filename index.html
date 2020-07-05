@@ -1,26 +1,182 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
-    <link rel="stylesheet" href="indexor.css">
-    <meta charset="utf-8">
-    <title>NavBark</title>
-  </head>
-  <body>
-    <header>
-      <div class = "container_l">
-        <img src="HCK.png" class = "logo" width="150" height="150">
-      </div>
-      <div class = "container">
+<!doctype html>
+
+<html lang="en">  <!-- Basic HTML template-->
+<head>
+  <meta charset="utf-8">
+  <title>Hanover Community Kitchen</title>  <!-- I needed to make this website, so I figured I might as well-->
+  <link rel="icon" href="assets/Logo.jpg">
+  <meta name="Landing Pange" content="By Garret Andreine">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="style.css">  
+  <script src="https://kit.fontawesome.com/3ab0a3d41a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cover_page">
         <nav>
-          <ul>
-            <li><button class="btn"><a href="#"> About</a></button></li>
-            <li><button class="btn"><a href="#">Donate</a></button></li>
-            <li><button class="btn"><a href="#">Contact Us</a></button></li>
-            <li><button class="btn"><a href="#">Past Sponsors</a></button></li>
-          </ul>
+            <img src="assets/Logo.jpg">
+            <div class="logo">
+                Hanover Community Kitchen
+            </div>
+            <label>
+                <input type="checkbox">
+                <span class="menu">
+                    <span class="hamburger"></span>
+                </span>  <!-- satisfies the "Responsive Nav Menu" -->
+                <ul>
+                    <div id="bigger">
+                        <li><div id="no">Click away to escape!</a></li>
+                        <li><a href="#intro">Welcome</a></li>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#join">Get Involved</a></li>
+                        <li><a href="#pics">Photo Gallery</a></li>
+                        <li><a href="#contact">Email Us</a></li>
+                        <li><a href="#search">Search</a></li>
+                        <li><a href="#footer">Links</a></li>
+                    </div>
+                </ul>
+            </label>
         </nav>
-      </div>
-    </header>
-  </body>
+        <div class="top">
+            <img src="assets/thing4.jpg">
+            <div id="welcome">
+                Welcome to the Hanover Community Kitchen Pantry! Scroll around or use the menu in the top to navigate.
+            </div>
+        </div>
+        <div class="goal">
+            <div id="mission">
+                The Hanover Community Kitchen strives to create community across the dinner table by preparing weekly meals using donated supplies for local residents. Our goal is to build community in the Hanover area, foster culinary and interpersonal skills, and encourage service to others.
+            </div>
+        </div>
+        <div class="money">
+            <div id="donate">
+                Hanover Community Kitchen is a student run non-for-profit that relies completely on the generosity of the community. If you can spare, please consider donating and making a difference in the lives of others.
+            </div>
+            <button class="button"><a href="#paypalsomeday">Donate</a></button>
+        </div>
+        <div class="involve">
+            <div id="join">
+                Want to get involved with Hanover Community Kitchen? Feel free to stop by or donate supplies to Our Savior Lutheran Church and Campus Ministry at 5 Summer St, Hanover, NH 03755. All volunteers are welcome, we love the extra hands! If you don't know how to cook don't worry, we love teaching!
+            </div>
+            <img src="assets/thing1.jpg">
+        </div>
+        <div id="pics">
+            Photo Gallery!
+        </div>
+        <div id="pics2">
+            Press the arrows!
+        </div>
+        <div class="container">  <!--Snipped from https://www.cssscript.com/pure-html-css-card-slider/ but edited since-->
+            <input id="rad1" type="radio" name="rad" checked>
+            <section style="background-image: url('assets/thing5.jpg')">
+                <div class="arrows">
+                    <label for="rad4"><i class="fa fa-chevron-left"></i></label>
+                    <label for="rad2"><i class="fa fa-chevron-right"></i></label>
+                </div>
+            </section>
+            <input id="rad2" type="radio" name="rad">
+            <section style="background-image: url('assets/thing2.jpg')">
+                <div class="arrows">
+                    <label for="rad1"><i class="fa fa-chevron-left"></i></label>
+                    <label for="rad3"><i class="fa fa-chevron-right"></i></label>
+                </div>
+            </section>
+            <input id="rad3" type="radio" name="rad">
+            <section style="background-image: url('assets/thing6.jpg')">
+                <div class="arrows">
+                    <label for="rad2"><i class="fa fa-chevron-left"></i></label>
+                    <label for="rad4"><i class="fa fa-chevron-right"></i></label>
+                </div>
+            </section>
+            <input id="rad4" type="radio" name="rad">
+            <section style="background-image: url('assets/thing7.jpg')">
+                <div class="arrows">
+                    <label for="rad3"><i class="fa fa-chevron-left"></i></label>
+                    <label for="rad1"><i class="fa fa-chevron-right"></i></label>
+                </div>
+            </section>
+        </div>
+        <div class="info">
+            <div id="contact">
+                <div class="msg">
+                    Email us here!
+                </div>
+                <button class="email"><a href="mailto:HanoverCommunityKitchen@Dartmouth.edu"><img src="assets/gmail.png"></a></button>
+            </div>
+            <div class="search">
+                <div id="search">
+                    Didn't find what you were looking for? Search the page here!
+                </div>
+                <div class="bar">
+                    <input type="text" class="search_bar" placeholder="Search...">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <!-- satisfies the "test input bar for search" -->
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="link_box">
+                <label for="toggle">Sponsors</label>
+                <input type="checkbox" id="toggle" class="visually-hidden">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="#">Food Pantry A</a></li>
+                        <li><a href="#">Food Pantry B</a></li>
+                        <li><a href="#">Food Pantry C</a></li>
+                        <li><a href="#">Food Pantry D</a></li>
+                        <li><a href="#">Food Pantry E</a></li>
+                        <li><a href="#">Food Pantry F</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link_box">
+                <label for="toggle">Money</label>
+                <input type="checkbox" id="toggle" class="visually-hidden">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="#">Venmo</a></li>
+                        <li><a href="#">Paypal</a></li>
+                        <li><a href="#">Check</a></li>
+                        <li><a href="#">BitCoin</a></li>
+                        <li><a href="#">Direct Deposit</a></li>
+                        <li><a href="#">Dinero</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link_box">
+                <label for="toggle">Links </label>
+                <input type="checkbox" id="toggle" class="visually-hidden">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="#">Welcome</a></li>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link_box">
+                <label for="toggle">Social Media</label>
+                <input type="checkbox" id="toggle" class="visually-hidden">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Minecraft</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Zoom</a></li>
+                        <li><a href="#">Tumblr</a></li>
+                        <li><a href="#">Neighbor's Address</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
